@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ユーザ一覧</title>
+<link href="css/bootstrap/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/origin/origin.css">
+<link rel="stylesheet" type="text/css" href="css/origin/header.css">
+<link rel="stylesheet" type="text/css" href="css/origin/footer.css">
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+	integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+	crossorigin="anonymous">
+</head>
+<body>
+<!-- header start -->
+	<header>
+			<div class="site-logo">
+				<a href="index.html"><img src="img/logo.png"></a>
+			</div>
+			<div class="header-list">
+				<ul>
+					<li><a href="Login.html"><button class="header-button" type="button" class="btn btn-dark">ログアウト</button></a></li>
+					<li><a href="NewEntry.html"><button class="header-button" type="button" class="btn btn-dark">新規登録</button></a></li>
+					<li><a href="userinfo.html"><button class="header-button-user" type="button" class="btn btn-dark"><i class="fas fa-address-card"></i></button></a></li>
+					<li><a href="cart.html"><button class="header-button-cart" type="button" class="btn btn-warning"><i class="fas fa-shopping-cart"></i></button></a></li>
+					<li class="username">ユーザ名さん</li>
+					<li><a href="masterentry.html"><button class="header-button-master" type="button">商品マスタ
+								新規登録</button></a></li>
+					<li><a href="masteritem.html"><button class="header-button-master" type="button">商品マスタ
+								一覧</button></a></li>
+				</ul>
+			</div>
+	</header>
+	<!-- header end -->
+	<div class="userlist-container">
+		<form>
+			<h2>ユーザ一覧</h2>
+			<div class="userlist-serchform">
+			<div class="form-group row">
+				<label class="col-sm-2">ログインID</label> <input type="text"
+					class="form-control col-sm-6" id="loginId"
+					aria-describedby="emailHelp" placeholder="Enter loginId">
+			</div>
+			<div class="form-group row">
+				<label class="col-sm-2">ユーザ名</label> <input type="text"
+					class="form-control col-sm-6" id="Username"
+					placeholder="Enter Username">
+			</div>
+			<div class="form-group row">
+				<label class="col-sm-2">生年月日</label> <input type="date"
+					class="form-control col-sm-3" id="Bityh1" placeholder="Enter Birth">
+				<h4 class="col-sm-1">～</h4>
+				<input type="date" class="form-control col-sm-3" id="Username"
+					placeholder="Enter Birth">
+			</div>
+			<button type="submit" class="btn btn-primary">検索</button>
+			</div>
+		</form>
+		<div class="userlist-table">
+	<table class="table table-bordered">
+		<thead class="thead-light">
+			<tr>
+				<th scope="col">ログインID</th>
+				<th scope="col">ユーザ名</th>
+				<th scope="col">生年月日</th>
+				<th scope="col"></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>id0001</td>
+				<td>taro</td>
+				<td>1999/12/12</td>
+				<td><a class="btn btn-primary" href="userdetail.html" role="button">詳細</a> <a
+					class="btn btn-success" href="userupdate.html" role="button">更新</a> <a
+					class="btn btn-danger" href="userdelete.html" role="button">削除</a></td>
+			</tr>
+		</tbody>
+	</table>
+		</div>
+		<nav aria-label="Page navigation example">
+		<ul class="pagination">
+			<li class="page-item"><a class="page-link" href="#">Previous</a></li>
+			<li class="page-item"><a class="page-link" href="#">1</a></li>
+			<li class="page-item"><a class="page-link" href="#">2</a></li>
+			<li class="page-item"><a class="page-link" href="#">3</a></li>
+			<li class="page-item"><a class="page-link" href="#">Next</a></li>
+		</ul>
+	</nav>
+	</div>
+
+	<!-- footer start -->
+	<footer>
+		<div class="footer-address">
+			<ul>
+				<li>〒@@@-@@@@</li>
+				<li>@@県???市******区\\\</li>
+				<li>043-\\\-@@@@</li>
+			</ul>
+		</div>
+
+		<div class="footer-list">
+			<li><a href="UserList.html"><button class="footer-button-user"
+						type="button" class="btn btn-warning">
+						<i class="fas fa-address-card"></i>ユーザ一覧
+					</button></a></li>
+		</div>
+	</footer>
+	<!-- footer end -->
+</body>
+</html>

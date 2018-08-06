@@ -1,0 +1,33 @@
+footer{
+	height:80px;
+	width:100%;
+	background-color:black;
+}
+.footer-address ul{
+	float:left;
+	margin-left:50px;
+}
+.footer-address li{
+	list-style:none;
+	color:white;
+}
+.footer-list li{
+	float:right;
+}
+.footer-button-user{
+	margin-top:20px;
+	margin-right:50px;
+	width:150px;
+	height:40px;
+	color:white;
+	background:deepskyblue;
+	transition:background-color 0.5s;
+}
+.footer-button-user:hover{
+	color:deepskyblue;
+	background:white;
+}
+
+button{
+	margin:10px;
+}

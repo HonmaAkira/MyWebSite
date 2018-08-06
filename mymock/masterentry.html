@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>商品マスタ新規登録</title>
+<link href="css/bootstrap/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/origin/origin.css">
+<link rel="stylesheet" type="text/css" href="css/origin/header.css">
+<link rel="stylesheet" type="text/css" href="css/origin/footer.css">
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+	integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+	crossorigin="anonymous">
+</head>
+<body>
+	<!-- header start -->
+	<header>
+			<div class="site-logo">
+				<a href="index.html"><img src="img/logo.png"></a>
+			</div>
+			<div class="header-list">
+				<ul>
+					<li><a href="Login.html"><button class="header-button" type="button" class="btn btn-dark">ログアウト</button></a></li>
+					<li><a href="NewEntry.html"><button class="header-button" type="button" class="btn btn-dark">新規登録</button></a></li>
+					<li><a href="userinfo.html"><button class="header-button-user" type="button" class="btn btn-dark"><i class="fas fa-address-card"></i></button></a></li>
+					<li><a href="cart.html"><button class="header-button-cart" type="button" class="btn btn-warning"><i class="fas fa-shopping-cart"></i></button></a></li>
+					<li class="username">ユーザ名さん</li>
+					<li><a href="masterentry.html"><button class="header-button-master" type="button">商品マスタ
+								新規登録</button></a></li>
+					<li><a href="masteritem.html"><button class="header-button-master" type="button">商品マスタ
+								一覧</button></a></li>
+				</ul>
+			</div>
+	</header>
+	<!-- header end -->
+	<form action="masteritem.html">
+		<div class="masterentry-container">
+			<h2>新規マスタ商品登録</h2>
+
+			<div class="row">
+				<label class="col-sm-3">商品名</label> <input type="text"
+					class="form-control col-sm-8" id="itemname"
+					aria-describedby="itemnemeHelp" placeholder="Enter item">
+			</div>
+			<div class="row">
+				<label class="col-sm-3">商品詳細</label>
+				<textarea class="form-control col-sm-8" id="Textarea" rows="3"
+					placeholder="Enter detail"></textarea>
+			</div>
+			<div class="row">
+				<label class="col-sm-3">価格</label> <input type="text"
+					class="form-control col-sm-8" id="price"
+					aria-describedby="priceHelp" placeholder="Enter price">
+			</div>
+			<div class="row">
+				<label class="col-sm-3">商品画像</label> <input type="text"
+					class="form-control col-sm-8" id="image"
+					aria-describedby="imageHelp" placeholder="Enter image directory">
+			</div>
+			<br> <a class="btn btn-dark" href="index.html" role="button">戻る</a>
+			<button type="submit" class="btn btn-primary">新規登録</button>
+
+		</div>
+	</form>
+
+
+<!-- footer start -->
+	<footer>
+		<div class="footer-address">
+			<ul>
+				<li>〒@@@-@@@@</li>
+				<li>@@県???市******区\\\</li>
+				<li>043-\\\-@@@@</li>
+			</ul>
+		</div>
+
+		<div class="footer-list">
+			<li><a href="UserList.html"><button class="footer-button-user"
+						type="button" class="btn btn-warning">
+						<i class="fas fa-address-card"></i>ユーザ一覧
+					</button></a></li>
+		</div>
+	</footer>
+	<!-- footer end -->
+</body>
+</html>

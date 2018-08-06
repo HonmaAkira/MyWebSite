@@ -1,0 +1,79 @@
+.header-button{
+	text-align:center;
+	font-weight:bold;
+	margin-top:45px;
+	width:100px;
+	height:40px;
+	color:gray;
+	background:white;
+	transition:background-color 0.5s;
+	margin:45px 40px 20px 0;
+}
+
+.header-button-master{
+	text-align:center;
+	font-weight:bold;
+	margin-top:45px;
+	width:100px;
+	height:40px;
+	color:gray;
+	background:white;
+	transition:background-color 0.5s;
+	margin:45px 40px 20px 0;
+	font-size:8px;
+	text-align:center;
+	margin-right:40px;
+}
+button:hover{
+	background:gray;
+	color:white;
+}
+.header-button-cart{
+	text-align:center;
+	font-weight:bold;
+	margin-top:45px;
+	width:100px;
+	height:40px;
+	color:gray;
+	background:yellow;
+	transition:background-color 0.5s;
+	margin:45px 40px 20px 0;
+}
+.header-button-cart:hover{
+	background:gray;
+	color:yellow;
+}
+.header-button-user{
+	text-align:center;
+	font-weight:bold;
+	margin-top:45px;
+	width:100px;
+	height:40px;
+	color:white;
+	background:blue;
+	transition:background-color 0.5s;
+	margin:45px 40px 20px 0;
+}
+.header-button-user:hover{
+	background:white;
+	color:blue;
+}
+.username{
+	color:white;
+	font-family:"ＭＳ ゴシック",sans-serif;
+	margin:50px 30px 0 0;
+}
+.header-list li{
+	list-style:none;
+	float:right;
+}
+header{
+	height:140px;
+	width:100%;
+	background-color:black;
+
+}
+.site-logo{
+	float:left;
+	margin:20px 0 0 100px;
+}

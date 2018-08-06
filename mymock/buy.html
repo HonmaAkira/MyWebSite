@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>購入</title>
+<link href="css/bootstrap/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/origin/origin.css">
+<link rel="stylesheet" type="text/css" href="css/origin/header.css">
+<link rel="stylesheet" type="text/css" href="css/origin/footer.css">
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+	integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+	crossorigin="anonymous">
+</head>
+<body>
+	<!-- header start -->
+	<header>
+			<div class="site-logo">
+				<a href="index.html"><img src="img/logo.png"></a>
+			</div>
+			<div class="header-list">
+				<ul>
+					<li><a href="Login.html"><button class="header-button" type="button" class="btn btn-dark">ログアウト</button></a></li>
+					<li><a href="NewEntry.html"><button class="header-button" type="button" class="btn btn-dark">新規登録</button></a></li>
+					<li><a href="userinfo.html"><button class="header-button-user" type="button" class="btn btn-dark"><i class="fas fa-address-card"></i></button></a></li>
+					<li><a href="cart.html"><button class="header-button-cart" type="button" class="btn btn-warning"><i class="fas fa-shopping-cart"></i></button></a></li>
+					<li class="username">ユーザ名さん</li>
+					<li><a href="masterentry.html"><button class="header-button-master" type="button">商品マスタ
+								新規登録</button></a></li>
+					<li><a href="masteritem.html"><button class="header-button-master" type="button">商品マスタ
+								一覧</button></a></li>
+				</ul>
+			</div>
+	</header>
+	<!-- header end -->
+<form action="buyconfirm.html">
+	<div class="buy-container">
+		<h2>カートアイテム</h2>
+		<table class="table table-bordered">
+			<thead class="thead-light">
+				<tr>
+					<th scope="col">商品名</th>
+					<th scope="col">単価</th>
+					<th scope="col">小計</th>
+				</tr>
+			</thead>
+			<tbody>
+
+				<tr>
+					<td>Concert Series</td>
+					<td>63000円</td>
+					<td>63000円</td>
+				</tr>
+				<tr>
+					<td colspan="2" ></td>
+					<td><input type="radio" name="delivery" value="お急ぎ配送">お急ぎ配送
+						<input type="radio" name="delivery" value="通常配送">通常配送
+						<input type="radio" name="delivery" value="通常配送">時間指定配送
+					</td>
+				</tr>
+			</tbody>
+			</table>
+			<a class="btn btn-dark" href="cart.html" role="button">戻る</a>
+			<button type="submit" class="btn btn-primary">購入画面へ</button>
+	</div>
+</form>
+<!-- footer start -->
+	<footer>
+		<div class="footer-address">
+			<ul>
+				<li>〒@@@-@@@@</li>
+				<li>@@県???市******区\\\</li>
+				<li>043-\\\-@@@@</li>
+			</ul>
+		</div>
+
+		<div class="footer-list">
+			<li><a href="UserList.html"><button class="footer-button-user"
+						type="button" class="btn btn-warning">
+						<i class="fas fa-address-card"></i>ユーザ一覧
+					</button></a></li>
+		</div>
+	</footer>
+	<!-- footer end -->
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>perc.shop</title>
+<link href="css/bootstrap/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/origin/origin.css">
+<link rel="stylesheet" type="text/css" href="css/origin/header.css">
+<link rel="stylesheet" type="text/css" href="css/origin/footer.css">
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+	integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+	crossorigin="anonymous">
+
+</head>
+<body>
+	<!-- header start -->
+	<header>
+			<div class="site-logo">
+				<a href="index.html"><img src="img/logo.png"></a>
+			</div>
+			<div class="header-list">
+				<ul>
+					<li><a href="Login.html"><button class="header-button" type="button" class="btn btn-dark">ログアウト</button></a></li>
+					<li><a href="NewEntry.html"><button class="header-button" type="button" class="btn btn-dark">新規登録</button></a></li>
+					<li><a href="userinfo.html"><button class="header-button-user" type="button" class="btn btn-dark"><i class="fas fa-address-card"></i></button></a></li>
+					<li><a href="cart.html"><button class="header-button-cart" type="button" class="btn btn-warning"><i class="fas fa-shopping-cart"></i></button></a></li>
+					<li class="username">ユーザ名さん</li>
+					<li><a href="masterentry.html"><button class="header-button-master" type="button">商品マスタ
+								新規登録</button></a></li>
+					<li><a href="masteritem.html"><button class="header-button-master" type="button">商品マスタ
+								一覧</button></a></li>
+				</ul>
+			</div>
+	</header>
+	<!-- header end -->
+	<div class="Index-container">
+		<div class="row">
+			<div class="col-md-2">
+				<div class="Index-sub-list">
+					<h5>カテゴリー</h5>
+					<ul>
+						<li><a href="#">ethnic</a></li>
+						<li><a href="#">classic</a></li>
+						<li><a href="#">drums</a></li>
+						<li><a href="#">accessory</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-md-8">
+				<div class="Index-seach-form">
+
+					<form>
+						<div class="form-group row">
+							<label class="col-sm-3">商品検索<i class="fas fa-search"></i></label>
+							<input type="text" class="form-control col-sm-8" id="item"
+								aria-describedby="itemHelp" placeholder="Enter item">
+						</div>
+						<div class="row">
+							<label class="col-sm-3">価格検索<i class="fas fa-search"></i></label>
+							<input type="text" class="form-control col-sm-3" id="price1"
+								aria-describedby="itemHelp" placeholder="Enter price">
+							<h4 class="col-sm-1" align="center">～</h4>
+							<input type="text" class="form-control col-sm-3" id="price2"
+								aria-describedby="itemHelp" placeholder="Enter price">
+						</div>
+						<button type="submit" class="btn btn-primary">検索</button>
+					</form>
+					<p>検索結果＠＠件表示</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="index-item">
+		<div class="row">
+		<div class="col-md-4">
+			<div class="image-card">
+				<a href="itemdetail.html"><img src="img/concert_series.jpg"></a>
+				<h3>商品名：Concert Series</h3>
+				<h3>価格：63000円</h3>
+			</div>
+		</div>
+
+		<div class="col-md-4">
+			<div class="image-card">
+				<a href="itemdetail.html"><img src="img/concert_series.jpg"></a>
+				<h3>商品名：Concert Series</h3>
+				<h3>価格：63000円</h3>
+			</div>
+		</div>
+
+		<div class="col-md-4">
+			<div class="image-card">
+				<img src="img/concert_series.jpg">
+				<h3>商品名：Concert Series</h3>
+				<h3>価格：63000円</h3>
+			</div>
+		</div>
+
+		<div class="col-md-4">
+			<div class="image-card">
+				<img src="img/concert_series.jpg">
+				<h3>商品名：Concert Series</h3>
+				<h3>価格：63000円</h3>
+			</div>
+		</div>
+
+		<div class="col-md-4">
+			<div class="image-card">
+				<img src="img/concert_series.jpg">
+				<h3>商品名：Concert Series</h3>
+				<h3>価格：63000円</h3>
+			</div>
+		</div>
+
+		<div class="col-md-4">
+			<div class="image-card">
+				<img src="img/concert_series.jpg">
+				<h3>商品名：Concert Series</h3>
+				<h3>価格：63000円</h3>
+			</div>
+		</div>
+
+		<div class="col-md-4">
+			<div class="image-card">
+				<img src="img/concert_series.jpg">
+				<h3>商品名：Concert Series</h3>
+				<h3>価格：63000円</h3>
+			</div>
+		</div>
+
+		<div class="col-md-4">
+			<div class="image-card">
+				<img src="img/concert_series.jpg">
+				<h3>商品名：Concert Series</h3>
+				<h3>価格：63000円</h3>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="pageArea">
+			<nav aria-label="Page navigation example">
+				<ul class="pagination">
+					<li class="page-item"><a class="page-link" href="#">Previous</a></li>
+					<li class="page-item"><a class="page-link" href="#">1</a></li>
+					<li class="page-item"><a class="page-link" href="#">2</a></li>
+					<li class="page-item"><a class="page-link" href="#">3</a></li>
+					<li class="page-item"><a class="page-link" href="#">Next</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+	</div>
+
+<!-- footer start -->
+	<footer>
+		<div class="footer-address">
+			<ul>
+				<li>〒@@@-@@@@</li>
+				<li>@@県???市******区\\\</li>
+				<li>043-\\\-@@@@</li>
+			</ul>
+		</div>
+
+		<div class="footer-list">
+			<li><a href="UserList.html"><button class="footer-button-user"
+						type="button" class="btn btn-warning">
+						<i class="fas fa-address-card"></i>ユーザ一覧
+					</button></a></li>
+		</div>
+	</footer>
+	<!-- footer end -->
+
+
+</body>
+</html>

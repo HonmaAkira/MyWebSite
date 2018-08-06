@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>新規登録</title>
+<link href="css/bootstrap/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/origin/origin.css">
+<link rel="stylesheet" type="text/css" href="css/origin/header.css">
+<link rel="stylesheet" type="text/css" href="css/origin/footer.css">
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+	integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+	crossorigin="anonymous">
+</head>
+<body>
+	<!-- header start -->
+	<header>
+			<div class="site-logo">
+				<a href="index.html"><img src="img/logo.png"></a>
+			</div>
+			<div class="header-list">
+				<ul>
+					<li><a href="Login.html"><button class="header-button" type="button" class="btn btn-dark">ログアウト</button></a></li>
+					<li><a href="NewEntry.html"><button class="header-button" type="button" class="btn btn-dark">新規登録</button></a></li>
+					<li><a href="userinfo.html"><button class="header-button-user" type="button" class="btn btn-dark"><i class="fas fa-address-card"></i></button></a></li>
+					<li><a href="cart.html"><button class="header-button-cart" type="button" class="btn btn-warning"><i class="fas fa-shopping-cart"></i></button></a></li>
+					<li class="username">ユーザ名さん</li>
+					<li><a href="masterentry.html"><button class="header-button-master" type="button">商品マスタ
+								新規登録</button></a></li>
+					<li><a href="masteritem.html"><button class="header-button-master" type="button">商品マスタ
+								一覧</button></a></li>
+				</ul>
+			</div>
+	</header>
+	<!-- header end -->
+	<form action=>
+		<div class="newentry-container">
+			<h2>新規ユーザ登録</h2>
+
+			<div class="row">
+				<label class="col-sm-3">ログインID</label>
+				<input type="text" class="form-control col-sm-8" id="loginId" aria-describedby="loginHelp" placeholder="Enter loginId">
+			</div>
+
+			<div class="row">
+				<label class="col-sm-3">ユーザ名</label>
+				<input type="text" class="form-control col-sm-8" id="name" aria-describedby="nameHelp" placeholder="Enter name">
+			</div>
+
+			<div class="row">
+				<label class="col-sm-3">パスワード</label>
+				<input type="password" class="form-control col-sm-8" id="password" aria-describedby="passHelp" placeholder="Enter password">
+			</div>
+
+			<div class="row">
+				<label class="col-sm-3">パスワード(確認)</label>
+				<input type="password" class="form-control col-sm-8" id="passwordconfirm" aria-describedby="passconHelp" placeholder="Enter password">
+			</div>
+
+			<div class="row">
+				<label class="col-sm-3">生年月日</label>
+				<input type="date" class="form-control col-sm-8" id="birth" aria-describedby="birthHelp" placeholder="Enter birthday">
+			</div>
+
+			<a class="btn btn-dark" href="index.html" role="button">戻る</a>
+			<button type="submit" class="btn btn-primary">新規登録</button>
+		</div>
+	</form>
+
+</body>
+<!-- footer start -->
+	<footer>
+		<div class="footer-address">
+			<ul>
+				<li>〒@@@-@@@@</li>
+				<li>@@県???市******区\\\</li>
+				<li>043-\\\-@@@@</li>
+			</ul>
+		</div>
+
+		<div class="footer-list">
+			<li><a href="UserList.html"><button class="footer-button-user"
+						type="button" class="btn btn-warning">
+						<i class="fas fa-address-card"></i>ユーザ一覧
+					</button></a></li>
+		</div>
+	</footer>
+	<!-- footer end -->
+</html>
