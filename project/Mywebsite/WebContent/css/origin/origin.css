@@ -1,0 +1,428 @@
+html{
+	height:100%;
+}
+body{
+	background-color:whitesmoke;
+	height:100%;
+}
+
+.Login-display {
+	background-image:url(../../img/login.jpg);
+	background-size:cover;
+	height:100%;
+}
+.Login-display-Transparent{
+	height:100%;
+	background-color:rgba(0,0,0,0.5);
+}
+.Login-site-logo img{
+	padding:250px 50px 20px 0;
+}
+
+.Login-container{
+	margin:0 auto;
+	width:20%;
+	height:100%;
+
+}
+.Login-site-contents{
+}
+.form-group-loginId{
+
+}
+.form-group-loginPass{
+
+}
+button{
+	margin:auto 0;
+}
+.btn>.btn-dark{
+	margin:0 auto;
+	text-align:center;
+}
+.Login-message{
+	color:white;
+}
+.Index-display{
+	height:100%;
+	width:100%;
+	background-color:whitesmoke;
+}
+.Index-container{
+	margin-top:50px;
+}
+.index-item{
+	margin-left:220px;
+	margin-right:200px;
+	margin-bottom:50px;
+	background-color:white;
+	border-style:outset;
+}
+.Index-sub-list{
+
+	height:400px;
+
+	border:3px gray double;
+	background-color:white;
+}
+.Index-sub-list li{
+
+	text-align:center;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-right:30px;
+
+}
+.Index-sub-list a{
+
+}
+.Index-sub-list h5{
+	border-bottom:2px gray outset;
+	text-align:center;
+
+}
+.Index-seach-form{
+	background-color:white;
+	border-style:outset;
+}
+.Index-seach-form p{
+	margin-left:100px;
+
+}
+.Index-seach-form form{
+	padding:100px;
+}
+a{
+	color:black;
+}
+li{
+	list-style:none;
+}
+
+.image-card{
+	background-color:white;
+	border-style:outset;
+	margin:10px;
+
+}
+.image-card img{
+	height:140px;
+	width:220px;
+	padding:0 6px;
+	margin:0 auto;
+}
+.image-card p{
+	margin:0 auto;
+}
+.image-card h4{
+	text-align:right;
+}
+.image-card h6{
+	text-align:right;
+}
+.pagenation{
+	text-align:center;
+	margin:0 auto;
+}
+.newentry-container{
+	margin:0 auto;
+	margin-top:50px;
+	margin-bottom:50px;
+	width:60%;
+	background-color:white;
+	border-style:outset;
+}
+.newentry-container>.row{
+	margin-bottom:20px;
+}
+.newentry-container h2{
+	text-align:center;
+	color:white;
+	background-color:RoyalBlue;
+}
+
+.newentry-form{
+
+}
+.itemdetail-contents{
+	background-color:white;
+
+}
+.itemdetail-contents img{
+	height:400px;
+	width:600px;
+	margin-top:40px;
+}
+.itemdetail-image img{
+	width:100%;
+	height:100%;
+	background-color:white;
+	border-style:outset;
+}
+.form-group h4{
+
+}
+.userlist-container{
+	margin:0 auto;
+	margin-top:50px;
+	margin-bottom:50px;
+	width:70%;
+	background-color:white;
+	border-style:outset;
+}
+.userlist-container h2{
+	text-align:center;
+	color:white;
+	background-color:RoyalBlue;
+}
+.userlist-seachform{
+
+
+}
+.cart-container{
+	margin:0 auto;
+	margin-top:50px;
+	width:60%;
+	background-color:white;
+	border-style:outset;
+}
+
+.cart-image-contents{
+	background-color:white;
+	padding:20px;
+	border-style:outset;
+
+}
+.cart-image-contents h2{
+	text-align:center;
+	color:white;
+	background-color:RoyalBlue;
+}
+.buy-container{
+	margin:0 auto;
+	margin-top:50px;
+	margin-bottom:50px;
+	width:70%;
+	background-color:white;
+	border-style:outset;
+
+}
+.buy-container h2{
+	text-align:center;
+	color:white;
+	background-color:RoyalBlue;
+
+}
+.buyconfirm-container{
+	margin:0 auto;
+	margin-top:50px;
+	margin-bottom:50px;
+	width:70%;
+	background-color:white;
+	border-style:outset;
+}
+.buyconfirm-container h2{
+	text-align:center;
+	color:white;
+	background-color:RoyalBlue;
+
+}
+.buyfinish-container{
+	margin:0 auto;
+	margin-top:50px;
+	margin-bottom:50px;
+	width:70%;
+	background-color:white;
+	border-style:outset;
+
+}
+.buyfinish-container h2{
+	text-align:center;
+}
+.buyfinish-container h3{
+	text-align:center;
+	color:white;
+	background-color:RoyalBlue;
+
+}
+.buyfinish-container h5{
+	text-align:center;
+}
+.buyfinish-container h4{
+	text-align:center;
+}
+.buyfinish-container table{
+	padding:100px;
+}
+.userinfo-container{
+	margin:0 auto;
+	margin-top:50px;
+	margin-bottom:50px;
+	width:70%;
+	background-color:white;
+	border-style:outset;
+}
+.userinfo-contents{
+		border-bottom:2px dotted;
+}
+.userinfo-contents h3{
+	color:white;
+	background-color:RoyalBlue;
+	padding-left:200px;
+}
+.userinfo-contents p{
+	margin-top:30px;
+	margin-left:200px;
+	margin-right:200px;
+
+}
+.userinfo-contents span{
+	text-decoration:underline;
+}
+.userinfo-buylist{
+	margin:0 auto;
+	width:70%;
+}
+.userinfo-buylist a{
+	background-color:black;
+	color:white;
+}
+.masterentry-container{
+	margin:0 auto;
+	margin-top:50px;
+	margin-bottom:50px;
+	width:70%;
+	background-color:white;
+	border-style:outset;
+}
+.masterentry-container h2{
+	color:white;
+	background-color:RoyalBlue;
+}
+.masterentry-container > .row{
+	margin-bottom:20px;
+}
+.buyhistory-display{
+
+}
+.buyhistory-container{
+	margin:0 auto;
+	margin-top:50px;
+	margin-bottom:50px;
+	width:70%;
+	background-color:white;
+	border-style:outset;
+}
+.buyhistory-container h2{
+	text-align:center;
+	padding-right:40px;
+	color:white;
+	background-color:RoyalBlue
+}
+
+.masteritem-container{
+	margin:0 auto;
+	margin-top:50px;
+	margin-bottom:50px;
+	width:70%;
+	background-color:white;
+	border-style:outset;
+}
+.masteritem-container h2{
+	color:white;
+	background-color:RoyalBlue;
+
+}
+.masterdetail-container{
+	margin:0 auto;
+	margin-top:50px;
+	margin-bottom:50px;
+	width:70%;
+	background-color:white;
+	border-style:outset;
+}
+.masterdetail-container img{
+	height:300px;
+	width:500px;
+}
+.masterdetail-container h2{
+	color:white;
+	background-color:RoyalBlue
+}
+.masterdetail-container span{
+		text-decoration:underline;
+}
+.masterupdate-container{
+	margin:0 auto;
+	margin-top:50px;
+	margin-bottom:50px;
+	width:70%;
+	background-color:white;
+	border-style:outset;
+}
+.masterupdate-container h2{
+	color:white;
+	background-color:RoyalBlue;
+}
+.masterupdate-container h5{
+	padding:20px;
+}
+.masterdelete-container{
+	margin:0 auto;
+	margin-top:50px;
+	margin-bottom:50px;
+	width:70%;
+	background-color:white;
+	border-style:outset;
+}
+.masterdelete-container h2{
+	color:white;
+	background-color:RoyalBlue;
+}
+.masterdelete-container h5{
+	padding:20px;
+}
+
+.pageArea {
+	margin:  0px auto;
+	text-align: center;
+}
+.userdetail-container{
+	margin:0 auto;
+	margin-top:50px;
+	margin-bottom:50px;
+	width:70%;
+	background-color:white;
+	border-style:outset;
+}
+.userdetail-container h2{
+	color:white;
+	background-color:RoyalBlue
+}
+.userdetail-container span{
+	text-decoration:underline;
+}
+.userupdate-container{
+	margin:0 auto;
+	margin-top:50px;
+	margin-bottom:50px;
+	width:70%;
+	background-color:white;
+	border-style:outset;
+}
+.userupdate-container h2{
+	color:white;
+	background-color:RoyalBlue;
+}
+.userdelete-container{
+	margin:0 auto;
+	margin-top:50px;
+	margin-bottom:50px;
+	width:70%;
+	background-color:white;
+	border-style:outset;
+}
+.userdelete-container h2{
+	color:white;
+	background-color:RoyalBlue;
+}
