@@ -48,7 +48,7 @@
 			</c:forEach>
 			<tr>
 				<td>${finishBDB.deliveryMethodName}</td>
-				<td><fmt:formatNumber value="${finishBDB.deliveryMehodPrice*1.08}" maxFractionDigits="0"/>円</td>
+				<td><fmt:formatNumber value="${finishBDB.deliveryMethodPrice*1.08}" maxFractionDigits="0"/>円</td>
 			</tr>
 
 		</table>

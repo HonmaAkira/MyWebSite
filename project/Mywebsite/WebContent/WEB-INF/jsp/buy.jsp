@@ -28,7 +28,7 @@
 					<c:forEach var="item" items="${cart}">
 						<tr>
 							<td colspan="2">${item.name}</td>
-							<td><fmt:formatNumber value="${item.price*1.08}" maxFractionDigits="0"/></td>
+							<td><fmt:formatNumber value="${item.price*1.08}" maxFractionDigits="0"/>円</td>
 						</tr>
 					</c:forEach>
 					<tr>

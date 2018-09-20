@@ -26,20 +26,20 @@
 			<c:forEach var="item" items="${cart}">
 				<tr>
 					<td colspan="2">${item.name}</td>
-					<td colspan="2"><fmt:formatNumber value="${item.price*1.08}" maxFractionDigits="0"/></td>
+					<td colspan="2"><fmt:formatNumber value="${item.price*1.08}" maxFractionDigits="0"/>円</td>
 				</tr>
 			</c:forEach>
 				<tr>
 					<th colspan="2" class="bg-light text-dark">すべての小計</th>
-					<td><fmt:formatNumber value="${dbd.totalPrice*1.08}" maxFractionDigits="0"/>円</td>
+					<td><fmt:formatNumber value="${bdb.totalPrice*1.08}" maxFractionDigits="0"/>円</td>
 				</tr>
 				<tr>
 					<th colspan="2" class="bg-light text-dark">送料</th>
-					<td><fmt:formatNumber value="${dbd.deliveryMehodPrice*1.08}" maxFractionDigits="0"/>円</td>
+					<td><fmt:formatNumber value="${bdb.deliveryMethodPrice*1.08}" maxFractionDigits="0"/>円</td>
 				</tr>
 				<tr>
 					<th colspan="2" class="bg-light text-danger">合計</th>
-					<td class="text-danger"><fmt:formatNumber value="${(dbd.totalPrice*1.08)+(dbd.deliveryMehodPrice*1.08)}" maxFractionDigits="0"/>円</td>
+					<td class="text-danger"><fmt:formatNumber value="${(bdb.totalPrice*1.08)+(bdb.deliveryMethodPrice*1.08)}" maxFractionDigits="0"/>円</td>
 				</tr>
 			</tbody>
 		</table>

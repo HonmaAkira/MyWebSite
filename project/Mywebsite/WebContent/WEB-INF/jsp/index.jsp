@@ -12,7 +12,7 @@
 </head>
 <body>
 	<jsp:include page="/baselayout/header.jsp" />
-	<form action="Itemsearch" method="GET">
+	<form action="Index" method="POST">
 	<div class="Index-container">
 		<div class="row">
 			<div class="col-md-2">

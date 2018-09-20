@@ -20,7 +20,7 @@
 	background:white;
 	transition:background-color 0.5s;
 	margin:45px 40px 20px 0;
-	font-size:11px;
+	font-size:8px;
 	text-align:center;
 	margin-right:40px;
 }
@@ -47,7 +47,7 @@ button:hover{
 	text-align:center;
 	font-weight:bold;
 	margin-top:45px;
-	width:120px;
+	width:90px;
 	height:40px;
 	color:white;
 	background:blue;
