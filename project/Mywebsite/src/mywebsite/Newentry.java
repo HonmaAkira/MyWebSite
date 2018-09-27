@@ -35,7 +35,7 @@ public class Newentry extends HttpServlet {
 		//sessionを取得しようとして、もしセッションが存在しない場合は、ログインサーブレットへ遷移する
 		HttpSession session = request.getSession();
 
-		
+
 
 		//jspへフォワードする
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/newentry.jsp");

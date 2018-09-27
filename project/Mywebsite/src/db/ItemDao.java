@@ -125,6 +125,45 @@ public class ItemDao {
 		}
 		return null;
 	}
+	//t_itemテーブルのnameを引数にnameに紐づくレコードを検索するメソッド
+	public Item FindbyItemName(String name) {
+		Connection con = null;
+		try {
+			//データベースへ接続
+			con = DBmanager.getConnection();
+			//sql文を準備
+			String sql = "SELECT * FROM t_item WHERE name = ?";
+			//PreparedStatementでSELECTを実行し、結果票を取得する
+			PreparedStatement prstmt = con.prepareStatement(sql);
+			prstmt.setString(1,name);
+			ResultSet rs = prstmt.executeQuery();
+			//if(rs.next())で結果票の中身を取り出して変数に格納する
+			if(!rs.next()) {
+				return null;
+			}
+			int id = rs.getInt("id");
+			int category = rs.getInt("category_id");
+			String Name = rs.getString("name");
+			String detail = rs.getString("detail");
+			int price = rs.getInt("price");
+			String image = rs.getString("image");
+			Item item = new Item(id,category,Name,detail,price,image);
+			return item;
+			}catch (SQLException e) {
+				e.printStackTrace();
+			}finally {
+				//connection切断
+				if(con != null) {
+					try {
+						con.close();
+					} catch (SQLException e) {
+						// TODO 自動生成された catch ブロック
+						e.printStackTrace();
+					}
+				}
+			}
+		return null;
+	}
 
 	//t_itemテーブルのidを引数にidに紐づくレコードを削除するメソッド
 	public void DeleteId(int id) {

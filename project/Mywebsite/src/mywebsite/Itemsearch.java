@@ -57,17 +57,30 @@ public class Itemsearch extends HttpServlet {
 		//priceフォームに値が入っていた場合にString型からint型へ変換する作業
 		//文字列以外の時に()
 		if (!price1.equals("")) {
-			if(price1!="[a-zA-Z]") {
+			try {
 				int price01 = Integer.parseInt(price1);
 				Price1 = price01;
+			}catch(NumberFormatException e) {
+				request.setAttribute("ErrMsg","もう一度数値を入れて検索してください");
+				RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/index.jsp");
+				dispatcher.forward(request, response);
+				return;
 			}
+				
+			
 		}
 
 		if (!price2.equals("")) {
-			if(price1!="[a-zA-Z]") {
+			try {
 				int price02 = Integer.parseInt(price2);
 				Price2 = price02;
+			}catch(NumberFormatException e) {
+				RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/index.jsp");
+				dispatcher.forward(request, response);
+				return;
 			}
+				
+			
 		}
 
 		//検索された空欄ではないフォームの値をセッションスコープにセットするための条件を決める

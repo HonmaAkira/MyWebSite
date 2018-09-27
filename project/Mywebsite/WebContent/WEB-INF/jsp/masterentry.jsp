@@ -13,8 +13,10 @@
 <form action="Masterentry" method="POST" enctype="multipart/form-data">
 		<div class="masterentry-container">
 			<h2>新規マスタ商品登録</h2>
-			<c:if test= "${ErrMsg1!=null}"><p class="text-danger">画像ファイルが選択されていません</p></c:if>
-			<c:if test = "${ErrMsg2 != null}"><p class="text-danger">未入力の項目があります</p></c:if>
+			<c:if test= "${ErrMsg1!=null}"><p class="text-danger">${ErrMsg1}</p></c:if>
+			<c:if test = "${ErrMsg2 != null}"><p class="text-danger">${ErrMsg2}</p></c:if>
+			<c:if test = "${ErrMsg3 != null}"><p class="text-danger">${ErrMsg3}</p></c:if>
+			<c:if test = "${ErrMsg4 != null}"><p class="text-danger">${ErrMsg4}</p></c:if>
 			<div class="row">
 				<label class="col-sm-3">商品カテゴリ</label>
 				<input type="radio" name="category" value="1"><label class = "col-sm-1">ethnic</label>

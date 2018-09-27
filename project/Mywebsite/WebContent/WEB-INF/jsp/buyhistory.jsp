@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
      <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+     <%@ taglib prefix="fmt"
+           uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,7 +27,7 @@
 			<tr>
 				<td>${BuyresultBDB.createDate}</td>
 				<td>${BuyresultBDB.deliveryMethodName }</td>
-				<td>${BuyresultBDB.totalPrice+BuyresultBDB.deliveryMethodPrice}円</td>
+				<td><fmt:formatNumber value="${(BuyresultBDB.totalPrice*1.08)+(BuyresultBDB.deliveryMethodPrice*1.08)}" maxFractionDigits="0"/> 円</td>
 			</tr>
 			</table>
 			<br>
@@ -39,12 +41,12 @@
 			<c:forEach var="buylist" items="${BuyItemList}">
 			<tr>
 				<td>${buylist.name}</td>
-				<td>${buylist.price}円</td>
+				<td><fmt:formatNumber value="${buylist.price*1.08}" maxFractionDigits="0"/> 円</td>
 			</tr>
 			</c:forEach>
 			<tr>
 				<td>${BuyresultBDB.deliveryMethodName}</td>
-				<td>${BuyresultBDB.deliveryMethodPrice}円</td>
+				<td><fmt:formatNumber value="${BuyresultBDB.deliveryMethodPrice*1.08}" maxFractionDigits="0"/>円</td>
 			</tr>
 
 		</table>

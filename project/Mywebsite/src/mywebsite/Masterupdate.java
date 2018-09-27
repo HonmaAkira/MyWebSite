@@ -104,9 +104,21 @@ public class Masterupdate extends HttpServlet {
 		}
 
 		//String型をint型に変換する
-		int Id = Integer.parseInt(id);
-		int Category = Integer.parseInt(category);
-		int Price = Integer.parseInt(price);
+		//スコープの中でしか変数は機能しないので、プログラム中で使用するときは、先に変数を宣言し値を初期化しておく
+		int Id = -1;
+		int Category = -1;
+		int Price = -1;
+		try {
+			Id = Integer.parseInt(id);
+			Category = Integer.parseInt(category);
+			Price = Integer.parseInt(price);
+		}catch(NumberFormatException e) {
+			request.setAttribute("ErrMsg3","価格に数値でなく文字列が入っています");
+			RequestDispatcher dispatcher= request.getRequestDispatcher("/WEB-INF/jsp/masterupdate.jsp");
+			dispatcher.forward(request, response);
+			return;
+		}
+
 		//ItemDaoをインスタンス化し、UpdateItem()メソッドを実行する
 		ItemDao itemdao = new ItemDao();
 		itemdao.UpdateItem(Id, Category, name, detail, Price, image);
