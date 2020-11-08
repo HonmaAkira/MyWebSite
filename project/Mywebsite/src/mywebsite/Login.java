@@ -50,6 +50,9 @@ public class Login extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//リクエストパラメータのフォームに入っている値を取得
+//		リクエストパラメータの「名前」を引数に指定すると「値」を取得することが出来ます。
+//		JSP側のinput name=loginId input name=passwordのnameプロパティを取得することによってinputに入力された値を
+//		取得することが出来る
 		String loginId = request.getParameter("loginId");
 		String password = request.getParameter("password");
 
